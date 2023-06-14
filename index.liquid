@@ -1,0 +1,20 @@
+---
+layout: main
+---
+
+<div class="intro">
+  <div class="left-split">
+    <img
+      src="images/JM Prof Pic.jpg"
+      alt="avatar"
+      class="avatar">
+  </div>
+</div>
+
+{% assign research = collections.research %}
+{% for r in research limit: 3 %}
+  <article>
+    <h3>{{ r.data.title }}</h3>
+    <p>{{ r.data.excerpt }}</p>
+  </article>
+{% endfor %}
