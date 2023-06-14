@@ -5,16 +5,36 @@ layout: main
 <div class="intro">
   <div class="left-split">
     <img
-      src="images/JM Prof Pic.jpg"
+      src="images/profpic.jpg"
       alt="avatar"
       class="avatar">
   </div>
+  <div class="right-split">
+    <h1>Hi, I'm JM 👋</h1>
+    <p>I’m a
+      <b>UX Designer</b>
+      &
+      <b>Researcher</b>
+      with the goal of democratising new technologies straight from the oven 🍳</p>
+    <p>As a
+      <b>designer</b>
+      &
+      <b>developer</b>, I’m ready to put my skills to the test. I want to create new tools and help businesses improve. I value
+      <b>innovation</b>
+      and
+      <b>growth</b>, always looking for opportunities to hone my skills as a
+      <b>technologist</b>.</p>
+  </div>
 </div>
-
-{% assign research = collections.research %}
-{% for r in research limit: 3 %}
-  <article>
-    <h3>{{ r.data.title }}</h3>
-    <p>{{ r.data.excerpt }}</p>
-  </article>
-{% endfor %}
+<div id="research">
+  {% assign research = collections.research | sort: "years" %}
+  {% for r in research limit: 3 %}
+    <article>
+      <img src="images/{{ r.data.image }}" alt="{{ r.data.imagealt }}">
+      <div class="contents">
+        <h1>{{ r.data.title }}</h1>
+        <p>{{ r.data.excerpt }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>

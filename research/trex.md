@@ -1,7 +1,7 @@
 ---
-title: Rolling the Dice 🎲
-excerpt: As presented at the Generative AI workshop in CHI 2023
-year: 2023
+title: Tool for Regression Experiments 🛠️
+excerpt: As presented at the CHIUXID 2019 5th ACM In Cooperation HCI and UX Conference
+year: 2019
 tags: research
 layout: main
 image: profpic.jpg

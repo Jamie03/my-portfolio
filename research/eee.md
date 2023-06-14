@@ -1,7 +1,7 @@
 ---
-title: Rolling the Dice 🎲
-excerpt: As presented at the Generative AI workshop in CHI 2023
-year: 2023
+title: Explore, Edit, Guess 🤔
+excerpt: Presented at the Human-Computer Interaction Slovenia 2021 sixth conference
+year: 2021
 tags: research
 layout: main
 image: profpic.jpg
