@@ -5,28 +5,35 @@
     <title>I'm right here!</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       type="text/css"
-      href="/styles.css" />
+      href="/styles.css">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="images/apple-touch-icon.png">
+      href="/images/apple-touch-icon.png">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png">
+      href="/images/favicon-32x32.png">
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon-16x16.png">
+      href="/images/favicon-16x16.png">
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="images/favicon.ico">
+      href="/images/favicon.ico">
     <link rel="manifest" href="site.webmanifest">
   </head>
   <body>
@@ -37,8 +44,8 @@
       </div>
       <div class="right">
         <a href="/">Home</a>
-        <a href="#research">Research</a>
-        <a href="#menu-item-3">Play</a>
+        <a href="/#research">Research</a>
+        <a href="/#switch">Play</a>
         <a href="/about-me">About Me</a>
       </div>
       <a
@@ -54,14 +61,13 @@
     <main>
       {{ content }}
     </main>
-
-    <footer>
-      <small>©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        J.Santiago | All Rights Reserved.</small>
-    </footer>
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
   </body>
+  <footer>
+    <small>©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      J.Santiago | All Rights Reserved.</small>
+  </footer>
 </html>

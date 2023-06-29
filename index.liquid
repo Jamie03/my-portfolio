@@ -5,7 +5,7 @@ layout: main
 <div class="intro">
   <div class="left-split">
     <img
-      src="images/profpic.jpg"
+      src="/images/profpic.jpg"
       alt="avatar"
       class="avatar">
   </div>
@@ -15,7 +15,7 @@ layout: main
       <b>UX Designer</b>
       &
       <b>Researcher</b>
-      with the goal of democratising new technologies straight from the oven 🍳</p>
+      with the goal of democratising new technologies straight from the oven! 🥧</p>
     <p>As a
       <b>designer</b>
       &
@@ -30,11 +30,19 @@ layout: main
   {% assign research = collections.research | sort: "years" %}
   {% for r in research limit: 3 %}
     <article>
-      <img src="images/{{ r.data.image }}" alt="{{ r.data.imagealt }}">
+      <img src="/images/{{ r.data.image }}" alt="{{ r.data.imagealt }}">
       <div class="contents">
-        <h1>{{ r.data.title }}</h1>
+        <h1>
+          <a href="{{ r.url }}">{{ r.data.title }}</a>
+        </h1>
         <p>{{ r.data.excerpt }}</p>
       </div>
     </article>
   {% endfor %}
+</div>
+<div class="banner">
+  <h1>Let's work together! 🤓</h1>
+  <a href="mailto:jmsantiagoiii@gmail.com">
+    <strong>jmsantiagoiii@gmail.com</strong>
+  </a>
 </div>
